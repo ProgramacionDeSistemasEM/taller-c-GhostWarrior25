@@ -35,4 +35,7 @@ int main(int argc, char **argv){
 	//variables sum y max_imc
 	printf("\npromedio IMC: %.1f\n", sum);
 	printf("maximo IMC: %.1f\n", max_imc);
+	//linea prueba
+	
 }
+
