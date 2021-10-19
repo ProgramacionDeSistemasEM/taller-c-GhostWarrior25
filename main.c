@@ -31,7 +31,7 @@ int main(int argc, char **argv){
 	float peso = 0.00f;
 	float altura = 0.0f;
 	float IMC = 0.0f;
-	float prom = 0.0f;
+	float altcuad = 0.0f;
 	int i = 0;
 	for (i; i<elementos;i++){
 		printf("Peso: ");
@@ -46,7 +46,7 @@ int main(int argc, char **argv){
 			printf("\nNumero Invalido");
 			exit(1);
 		}
-		IMC = (peso /(pow(altura, 2)));
+		IMC = (peso /(altura*altura));
 		sum += IMC;
 		if (IMC > max_imc){
 			max_imc = IMC;
