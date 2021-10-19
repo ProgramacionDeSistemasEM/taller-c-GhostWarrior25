@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
- 
+#include <math.h>
+
 int main(int argc, char **argv){
+
 	
 	int elementos = 0;
 	char c = 0;
@@ -44,7 +46,7 @@ int main(int argc, char **argv){
 			printf("\nNumero Invalido");
 			exit(1);
 		}
-		IMC = (peso /(altura**2));
+		IMC = (peso /(pow(altura, 2)));
 		sum += IMC;
 		if (IMC > max_imc){
 			max_imc = IMC;
